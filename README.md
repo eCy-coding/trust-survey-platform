@@ -1,18 +1,18 @@
-# trust-survey-platform
+# Trust Survey Platform — Monorepo
 
-Dijital Bilgi ve Miras Platformu (eCyPro Unified)
+## Uygulamalar
+- **apps/web**: Next.js (App Router)
+- **cms**: Strapi v5 (SQLite dev)
 
-## Modüller
-- Etik Değerler Tezi
-- Dijital Miras Arşivi
-- eCyPro Hizmetleri
+## Geliştirme
+- Strapi: `cd cms && npm run develop`
+- Web:    `cd apps/web && npm run dev`
 
-## Teknolojiler
-- Next.js + TypeScript + Tailwind CSS
-- Node.js + Express API veya Next.js API Routes
-- Strapi CMS
-- PostgreSQL
-- MeiliSearch
+## Ortam
+- `apps/web/.env.local` → `NEXT_PUBLIC_CMS_URL=http://localhost:1337`
 
-## Lisans
-MIT License
+## Dokümantasyon
+- `docs/architecture.md`
+- `docs/api.md`
+- `docs/operations.md`
+- `docs/roadmap.md`

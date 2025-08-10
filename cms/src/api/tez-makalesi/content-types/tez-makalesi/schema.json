@@ -1,0 +1,15 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tez_makalesis",
+  "info": {
+    "singularName": "tez-makalesi",
+    "pluralName": "tez-makalesis",
+    "displayName": "Tez Makalesi",
+    "description": "Tez ve makale kayıtları"
+  },
+  "options": { "draftAndPublish": true },
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "subtitle": { "type": "string" }
+  }
+}

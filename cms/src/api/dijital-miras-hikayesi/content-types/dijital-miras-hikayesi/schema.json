@@ -1,0 +1,15 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dijital_miras_hikayesis",
+  "info": {
+    "singularName": "dijital-miras-hikayesi",
+    "pluralName": "dijital-miras-hikayesis",
+    "displayName": "Dijital Miras Hikayesi",
+    "description": "Arşiv hikayeleri"
+  },
+  "options": { "draftAndPublish": true },
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "category": { "type": "string" }
+  }
+}

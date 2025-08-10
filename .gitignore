@@ -1,7 +1,30 @@
-node_modules
-.next
+# Node / Next / Strapi
+node_modules/
+.npm/
+.nvm/
+dist/
+build/
+.tmp/
+.cache/
+.next/
+.next-cache/
+coverage/
+
+# Env
 .env
-.env.local
-dist
-coverage
+.env.*.local
+apps/**/.env.local
+apps/**/.env
+cms/.env
+cms/.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# OS
 .DS_Store
+Thumbs.db

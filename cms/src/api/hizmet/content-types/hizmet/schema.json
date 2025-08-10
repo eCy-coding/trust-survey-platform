@@ -1,0 +1,15 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hizmets",
+  "info": {
+    "singularName": "hizmet",
+    "pluralName": "hizmets",
+    "displayName": "Hizmet",
+    "description": "eCyPro hizmetleri"
+  },
+  "options": { "draftAndPublish": true },
+  "attributes": {
+    "name": { "type": "string", "required": true },
+    "description": { "type": "text" }
+  }
+}
