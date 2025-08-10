@@ -1,30 +1,24 @@
-# Node / Next / Strapi
+# Bağımlılıklar
 node_modules/
-.npm/
-.nvm/
+.cache/
 dist/
 build/
-.tmp/
-.cache/
-.next/
-.next-cache/
-coverage/
 
-# Env
+# Ortam değişkenleri
 .env
-.env.*.local
-apps/**/.env.local
-apps/**/.env
-cms/.env
-cms/.env.*.local
+.env.local
+.env.development
+.env.production
 
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-*.log
+# IDE özel dosyalar
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
-# OS
+# Sistem dosyaları
 .DS_Store
 Thumbs.db
