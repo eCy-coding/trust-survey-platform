@@ -1,7 +1,18 @@
-HEAD
 # trust-survey-platform
-MIT License - 2025
 
-# trust-survey-platform
-(otomatik oluşturulan README içeriği)
-origin/main
+Dijital Bilgi ve Miras Platformu (eCyPro Unified)
+
+## Modüller
+- Etik Değerler Tezi
+- Dijital Miras Arşivi
+- eCyPro Hizmetleri
+
+## Teknolojiler
+- Next.js + TypeScript + Tailwind CSS
+- Node.js + Express API veya Next.js API Routes
+- Strapi CMS
+- PostgreSQL
+- MeiliSearch
+
+## Lisans
+MIT License
