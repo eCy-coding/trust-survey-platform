@@ -1,5 +1,7 @@
-<<<<<<< HEAD
+HEAD
 # trust-survey-platform
-=======
+MIT License - 2025
+
 # trust-survey-platform
->>>>>>> origin/main
+(otomatik oluşturulan README içeriği)
+origin/main
