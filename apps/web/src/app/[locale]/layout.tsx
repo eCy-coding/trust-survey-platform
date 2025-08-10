@@ -1,6 +1,6 @@
 import type {Metadata} from 'next';
 import {NextIntlClientProvider} from 'next-intl';
-import {notFound} from 'next/navigation';
+import {getMessages} from 'next-intl/server';
 import '../globals.css';
 
 export const metadata: Metadata = {
@@ -10,17 +10,13 @@ export const metadata: Metadata = {
 
 export default async function LocaleLayout({
   children,
-  params: {locale}
+  params
 }: {
   children: React.ReactNode;
-  params: {locale: string};
+  params: Promise<{locale: string}>;
 }) {
-  let messages;
-  try {
-    messages = (await import(\`../../../messages/\${locale}.json\`)).default;
-  } catch {
-    notFound();
-  }
+  const {locale} = await params;        // Next 15: params bir Promise
+  const messages = await getMessages(); // src/i18n/request.ts üzerinden gelir
 
   return (
     <html lang={locale}>
@@ -31,4 +27,8 @@ export default async function LocaleLayout({
       </body>
     </html>
   );
+}
+
+export function generateStaticParams() {
+  return [{locale: 'en'}, {locale: 'tr'}];
 }

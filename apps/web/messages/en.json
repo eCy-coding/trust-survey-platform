@@ -1,0 +1,11 @@
+{
+  "home": {
+    "title": "Welcome to the Digital Knowledge & Heritage Platform",
+    "description": "Preserve wisdom, organize knowledge, and empower communities."
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact"
+  }
+}
