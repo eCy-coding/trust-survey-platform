@@ -1,5 +1,6 @@
 import type {Metadata} from 'next';
 import {NextIntlClientProvider} from 'next-intl';
+import {getMessages} from 'next-intl/server';
 import Header from '../../components/Header';
 import '../globals.css';
 
@@ -15,8 +16,8 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: Promise<{locale: string}>;
 }) {
-  const {locale} = await params; // Next 15: params bir Promise
-  const messages = (await import(`../../../messages/${locale}.json`)).default;
+  const {locale} = await params;          // Next 15: params Promise
+  const messages = await getMessages();   // src/i18n/request.ts üzerinden mesajları alır
 
   return (
     <html lang={locale}>
