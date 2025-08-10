@@ -14,9 +14,7 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: Promise<{locale: string}>;
 }) {
-  const {locale} = await params; // Next 15: params bir Promise
-
-  // Mesajları doğrudan dosyadan yükle (config gerektirmez)
+  const {locale} = await params; // Next 15: params Promise
   const messages = (await import(`../../../messages/${locale}.json`)).default;
 
   return (

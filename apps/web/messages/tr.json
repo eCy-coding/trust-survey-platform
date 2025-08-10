@@ -7,5 +7,16 @@
     "home": "Ana Sayfa",
     "about": "Hakkında",
     "contact": "İletişim"
+  },
+  "mo": {
+    "heroTitle": "Yönetim & Organizasyon: Üstün Başaran Takımlar Kurun",
+    "heroSubtitle": "Yapıdan kültüre: modern organizasyonlar için pratik bir oyun kitabı.",
+    "cta": "Oyun Kitabını Başlat",
+    "sections": {
+      "why": "Neden Yönetim & Organizasyon?",
+      "styles": "Bugün İşleyen Liderlik Stilleri",
+      "evolution": "Organizasyon Tasarımının Evrimi",
+      "playbook": "90 Günlük Dönüşüm Oyun Kitabı"
+    }
   }
 }

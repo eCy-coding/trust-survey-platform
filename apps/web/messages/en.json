@@ -7,5 +7,16 @@
     "home": "Home",
     "about": "About",
     "contact": "Contact"
+  },
+  "mo": {
+    "heroTitle": "Management & Organization: Build Teams That Outperform",
+    "heroSubtitle": "From structure to culture: a practical playbook for modern organizations.",
+    "cta": "Start the Playbook",
+    "sections": {
+      "why": "Why Management & Organization Matter",
+      "styles": "Leadership Styles That Work Today",
+      "evolution": "The Evolution of Organizational Design",
+      "playbook": "Your 90-Day Transformation Playbook"
+    }
   }
 }
