@@ -1,5 +1,6 @@
 import type {Metadata} from 'next';
 import {NextIntlClientProvider} from 'next-intl';
+import Header from '../../components/Header';
 import '../globals.css';
 
 export const metadata: Metadata = {
@@ -14,13 +15,14 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: Promise<{locale: string}>;
 }) {
-  const {locale} = await params; // Next 15: params Promise
+  const {locale} = await params; // Next 15: params bir Promise
   const messages = (await import(`../../../messages/${locale}.json`)).default;
 
   return (
     <html lang={locale}>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
+          <Header />
           {children}
         </NextIntlClientProvider>
       </body>
