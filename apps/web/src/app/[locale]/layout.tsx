@@ -1,12 +1,17 @@
 import type {Metadata} from 'next';
-import {NextIntlClientProvider} from 'next-intl';
-import {getMessages} from 'next-intl/server';
 import Header from '../../components/Header';
 import '../globals.css';
 
 export const metadata: Metadata = {
   title: 'Trust Survey Platform',
-  description: 'Digital Knowledge & Heritage Platform'
+  description: 'Digital Knowledge & Heritage Platform',
+  openGraph: {
+    title: 'Trust Survey Platform',
+    description: 'Digital Knowledge & Heritage Platform',
+    url: 'http://localhost:3000',
+    siteName: 'Trust Survey Platform',
+    type: 'website'
+  }
 };
 
 export default async function LocaleLayout({
@@ -16,16 +21,12 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: Promise<{locale: string}>;
 }) {
-  const {locale} = await params;          // Next 15: params bir Promise
-  const messages = await getMessages();   // i18n/request.ts üzerinden gelir
-
+  const {locale} = await params; // Next 15
   return (
     <html lang={locale}>
       <body>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <Header />
-          {children}
-        </NextIntlClientProvider>
+        <Header />
+        {children}
       </body>
     </html>
   );
