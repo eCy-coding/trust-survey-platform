@@ -1,0 +1,49 @@
+﻿{
+    "cwd":  "C:\\Users\\seytim\\Desktop\\trust-survey-platform",
+    "has":  {
+                "next_config":  true,
+                "env_examples":  true,
+                "compose":  false,
+                "dockerfile":  false,
+                "cms_pkg":  true,
+                "package_json":  true,
+                "tailwind_front":  false,
+                "prisma":  false,
+                "frontend_pkg":  true,
+                "tsconfig_front":  true
+            },
+    "scripts":  {
+                    "frontend":  {
+                                     "dev":  "next dev --turbopack",
+                                     "build":  "next build",
+                                     "start":  "next start",
+                                     "lint":  "next lint"
+                                 },
+                    "cms":  {
+                                "build":  "strapi build",
+                                "console":  "strapi console",
+                                "deploy":  "strapi deploy",
+                                "dev":  "strapi develop",
+                                "develop":  "strapi develop",
+                                "start":  "strapi start",
+                                "strapi":  "strapi",
+                                "upgrade":  "npx @strapi/upgrade latest",
+                                "upgrade:dry":  "npx @strapi/upgrade latest --dry"
+                            }
+                },
+    "frontendDeps":  {
+                         "has_next":  true,
+                         "has_tailwind":  true,
+                         "has_shadcn":  [
+
+                                        ]
+                     },
+    "cmsDeps":  {
+                    "strapi":  [
+                                   "@strapi/plugin-cloud",
+                                   "@strapi/plugin-users-permissions",
+                                   "@strapi/provider-upload-aws-s3",
+                                   "@strapi/strapi"
+                               ]
+                }
+}
